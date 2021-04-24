@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-
+.vs*/
 # Compiled Object files
 *.slo
 *.lo
@@ -30,3 +30,21 @@
 *.exe
 *.out
 *.app
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
