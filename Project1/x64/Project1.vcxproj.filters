@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="file_archivator.h" />
+    <ClInclude Include="FileArchivaator.h" />
     <ClInclude Include="file_manager.h" />
   </ItemGroup>
   <ItemGroup>
@@ -11,6 +11,5 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="file_manager.cpp" />
-    <ClCompile Include="file_archivator.cpp" />
   </ItemGroup>
 </Project>

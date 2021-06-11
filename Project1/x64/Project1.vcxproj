@@ -19,12 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="file_archivator.h" />
+    <ClInclude Include="FileArchivaator.h" />
     <ClInclude Include="file_manager.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="file_archivator.cpp" />
     <ClCompile Include="file_manager.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

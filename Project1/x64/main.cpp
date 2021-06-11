@@ -1,5 +1,5 @@
 #include <iostream>
-#include "file_archivator.h"
+
 //create class iArchivator with method Compress/Decompress(pure  virtual function)
 //create class eRLEArchivator which inheritence of iArchivator and archived plain text
 //code in main for exmaple
@@ -27,11 +27,4 @@ int main()
 	file2.Read(data2);
 	cout << data << endl;
 	cout << data2 << endl;
-	eFileArchivator obj1;
-	string dst;
-	obj1.Compress(data, dst);
-	cout << dst << endl;
-	string ttt;
-	obj1.DeCompress(dst, ttt);
-	cout << ttt << endl;
 }
