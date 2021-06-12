@@ -1,5 +1,3 @@
-#include <iostream>
-#include "file_archivator.h"
 //create class iArchivator with method Compress/Decompress(pure  virtual function)
 //create class eRLEArchivator which inheritence of iArchivator and archived plain text
 //code in main for exmaple
@@ -13,12 +11,21 @@
 * archivator.DeCompress(compressedText, decompressedText);
 * cout<<decompressedText<<endl; //must printed London is the capiiiital of GB.
 */
-
+#include "file_archivator.h"
+#include "stdafx.h"
 #include "file_manager.h"
 
-int main()
+int main(int argc,char**argv)
 {
-	FileManager file1("1.txt");
+	for (int i = 1; i < argc; i++)
+	{
+		cout << argv[i] << endl;
+		FileManager file1(argv[i]);
+		string data;
+		file1.Read(data);
+		cout << data << endl;
+	}
+	/*FileManager file1("1.txt");
 	string data;
 	file1.Read(data);
 	FileManager file2("2.txt");
@@ -33,5 +40,5 @@ int main()
 	cout << dst << endl;
 	string ttt;
 	obj1.DeCompress(dst, ttt);
-	cout << ttt << endl;
+	cout << ttt << endl;*/
 }
